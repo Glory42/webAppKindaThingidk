@@ -1,23 +1,23 @@
 ````
 project-root/
-├── node_modules/        # Node.js modülleri
-├── public/              # Statik dosyalar (CSS, JavaScript, resimler)
+├── node_modules/        # Node.js modules
+├── public/              # Static files (CSS, JavaScript, images)
 │   ├── css/
 │   ├── js/
 │   └── img/
-├── views/               # Frontend dosyaları (HTML, şablon motoru dosyaları)
+├── views/               # Frontend files (HTML, template engine files)
 │   └── layouts/
-├── routes/              # Rota tanımları
-│   └── currency.js      # Döviz kuru rotaları
-├── controllers/         # Rota işleyicileri
+├── routes/              # Route definitions
+│   └── currency.js      # Currency exchange routes
+├── controllers/         # Route handlers
 │   └── currencyController.js
-├── config/              # API yapılandırması
+├── config/              # API configuration
 │   └── api.js
-├── utils/               # Yardımcı fonksiyonlar
-│   └── apiUtils.js      # API yardımcı fonksiyonları
-├── .env                 # Ortam değişkenleri
-├── .gitignore           # Git tarafından yok sayılacak dosyalar
-├── package.json         # Node.js proje yapılandırması
-├── server.js            # Ana sunucu dosyası
-└── README.md            # Proje açıklaması
+├── utils/               # Utility functions
+│   └── apiUtils.js      # API utility functions
+├── .env                 # Environment variables
+├── .gitignore           # Files to be ignored by Git
+├── package.json         # Node.js project configuration
+├── server.js            # Main server file
+└── README.md            # Project description
 ````
