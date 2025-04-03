@@ -1,0 +1,210 @@
+[
+    {
+        "id": 1,
+        "name": "Iphone",
+        "category": "Elektronik",
+        "models": [
+            {
+                "year": 2008,
+                "versions": [
+                    { "model": "iPhone 3G", "price": 1.165 }
+                ]
+            },
+            {
+                "year": 2009,
+                "versions": [
+                    { "model": "iPhone 3GS", "price": 1.530 }
+                ]
+            },
+            {
+                "year": 2010,
+                "versions": [
+                    { "model": "iPhone 4", "price": 1.600 }
+                ]
+            },
+            {
+                "year": 2011,
+                "versions": [
+                    { "model": "iPhone 4S", "price": 2.020 }
+                ]
+            },
+            {
+                "year": 2012,
+                "versions": [
+                    { "model": "iPhone 5", "price": 2.149 }
+                ]
+            },
+            {
+                "year": 2013,
+                "versions": [
+                    { "model": "iPhone 5S", "price": 2.279 }
+                ]
+            },
+            {
+                "year": 2014,
+                "versions": [
+                    { "model": "iPhone 6", "price": 2.349 }
+                ]
+            },
+            {
+                "year": 2015,
+                "versions": [
+                    { "model": "iPhone 6S", "price": 3.099 }
+                ]
+            },
+            {
+                "year": 2016,
+                "versions": [
+                    { "model": "iPhone 7", "price": 3.249 },
+                    { "model": "iPhone SE", "price": 1.999 }
+                ]
+            },
+            {
+                "year": 2017,
+                "versions": [
+                    { "model": "iPhone 8", "price": 4.149 },
+                    { "model": "iPhone X", "price": 6.099 }
+                ]
+            },
+            {
+                "year": 2018,
+                "versions": [
+                    { "model": "iPhone XR", "price": 7.399 },
+                    { "model": "iPhone XS", "price": 9.899 },
+                    { "model": "iPhone XS Max", "price": 10.999 }
+                ]
+            },
+            {
+                "year": 2019,
+                "versions": [
+                    { "model": "iPhone 11", "price": 7.299 }
+                ]
+            },
+            {
+                "year": 2020,
+                "versions": [
+                    { "model": "iPhone SE 2020", "price": 5.299 },
+                    { "model": "iPhone 12 Mini", "price": 9.999 },
+                    { "model": "iPhone 12", "price": 10.999 },
+                    { "model": "iPhone 12 Pro", "price": 14.999 },
+                    { "model": "iPhone 12 Pro Max", "price": 16.999 }
+                ]
+            },
+            {
+                "year": 2021,
+                "versions": [
+                    { "model": "iPhone 13 Mini", "price": 10.999 },
+                    { "model": "iPhone 13", "price": 11.999 },
+                    { "model": "iPhone 13 Pro", "price": 15.999 },
+                    { "model": "iPhone 13 Pro Max", "price": 10.999 }
+                ]
+            },
+            {
+                "year": 2022,
+                "versions": [
+                    { "model": "iPhone SE (3. Nesil)", "price": 16.999 },
+                    { "model": "iPhone 14", "price": 32.999 },
+                    { "model": "iPhone 14 Plus", "price": 36.999 },
+                    { "model": "iPhone 14 Pro", "price": 41.999 },
+                    { "model": "iPhone 14 Pro Max", "price": 45.999 }
+                ]
+            },
+            {
+                "year": 2023,
+                "versions": [
+                    { "model": "iPhone 15", "price": 49.999 },
+                    { "model": "iPhone 15 Plus", "price": 56.999 },
+                    { "model": "iPhone 15 Pro", "price": 64.999 },
+                    { "model": "iPhone 15 Pro Max", "price": 76.999 }
+                ]
+            },
+            {
+                "year": 2024,
+                "versions": [
+                    { "model": "iPhone 16", "price": 69.999 },
+                    { "model": "iPhone 16e", "price": 49.999 },
+                    { "model": "iPhone 16 Pro", "price": 89.999 },
+                    { "model": "iPhone 16 Pro Max", "price": 109.999 }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "name": "Benzin (1 litre)",
+        "category": "Yakıt",
+        "prices": [
+            { "year": 2008, "price": 3.21 },
+            { "year": 2009, "price": 3.15 },
+            { "year": 2010, "price": 3.68 },
+            { "year": 2011, "price": 4.30 },
+            { "year": 2012, "price": 4.64 },
+            { "year": 2013, "price": 4.93 },
+            { "year": 2014, "price": 4.24 },
+            { "year": 2015, "price": 4.29 },
+            { "year": 2016, "price": 5.19 },
+            { "year": 2017, "price": 5.56 },
+            { "year": 2018, "price": 5.83 },
+            { "year": 2019, "price": 6.98 },
+            { "year": 2020, "price": 7.18 },
+            { "year": 2021, "price": 12.21 },
+            { "year": 2022, "price": 19.22 },
+            { "year": 2023, "price": 34.03 },
+            { "year": 2024, "price": 42.50 },
+            { "year": 2025, "price": 45.39 }
+        ]
+    },
+    {
+        "id": 3,
+        "name": "İstanbul Ekmek Fiyatları(200gr- 250gr)",
+        "category": "Gıda",
+        "prices": [
+            { "year": 2008, "gram": 250, "price": 0.50 },
+            { "year": 2009, "gram": 250, "price": 0.50 },
+            { "year": 2010, "gram": 250, "price": 0.75 },
+            { "year": 2011, "gram": 250, "price": 0.75 },
+            { "year": 2012, "gram": 250, "price": 0.75 },
+            { "year": 2013, "gram": 250, "price": 0.75 },
+            { "year": 2014, "gram": 250, "price": 0.75 },
+            { "year": 2015, "gram": 250, "price": 1.25 },
+            { "year": 2016, "gram": 250, "price": 1.25 },
+            { "year": 2016, "gram": 250, "price": 1.25 },
+            { "year": 2017, "gram": 250, "price": 1.25 },
+            { "year": 2018, "gram": 250, "price": 1.25 },
+            { "year": 2019, "gram": 250, "price": 1.25 },
+            { "year": 2020, "gram": 240, "price": 1.50 },
+            { "year": 2021, "gram": 230, "price": 2.50 },
+            { "year": 2022, "gram": 200, "price": 5.00 },
+            { "year": 2023, "gram": 200, "price": 7.50 },
+            { "year": 2024, "gram": 200, "price": 10.00 },
+            { "year": 2025, "gram": 200, "price": 12.50 }
+        ]
+    },
+    {
+        "id": 4,
+        "name": "225 m3 Ortalama Aylık Tüketim Fiyatları",
+        "category": "Konut",
+        "prices": [
+            { "year": 2004, "m3_price": 0.221468, "monthly_cost": 49.83 },
+            { "year": 2005, "m3_price": 0.295943, "monthly_cost": 66.59 },
+            { "year": 2006, "m3_price": 0.382533, "monthly_cost": 86.07 },
+            { "year": 2007, "m3_price": 0.435862, "monthly_cost": 98.07 },
+            { "year": 2008, "m3_price": 0.577623, "monthly_cost": 130 },
+            { "year": 2009, "m3_price": 0.573711, "monthly_cost": 129.08 },
+            { "year": 2010, "m3_price": 0.505976, "monthly_cost": 113.84 },
+            { "year": 2011, "m3_price": 0.524951, "monthly_cost": 118.11 },
+            { "year": 2012, "m3_price": 0.689192, "monthly_cost": 155.07 },
+            { "year": 2013, "m3_price": 0.778405, "monthly_cost": 175.14 },
+            { "year": 2014, "m3_price": 0.795919, "monthly_cost": 179.08 },
+            { "year": 2015, "m3_price": 0.848461, "monthly_cost": 191 },
+            { "year": 2016, "m3_price": 0.827251, "monthly_cost": 186.13 },
+            { "year": 2017, "m3_price": 0.763615, "monthly_cost": 171.81 },
+            { "year": 2018, "m3_price": 0.837634, "monthly_cost": 188.47 },
+            { "year": 2019, "m3_price": 1.024756, "monthly_cost": 230.57 },
+            { "year": 2020, "m3_price": 1.251652, "monthly_cost": 281.62 },
+            { "year": 2021, "m3_price": 1.392146, "monthly_cost": 313.23 },
+            { "year": 2022, "m3_price": 3.059966, "monthly_cost": 688.49 },
+            { "year": 2024, "m3_price": 6.709546, "monthly_cost": 1509.64 }
+        ]
+      }
+]
