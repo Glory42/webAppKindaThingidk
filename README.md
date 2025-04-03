@@ -13,6 +13,9 @@ project-root/
 │   └── currencyController.js
 ├── config/              # API configuration
 │   └── api.js
+├── data/                # Data Files
+│   ├── products.json    # Product price history
+│   └── exchange.json    # Dollar/TL exchange rate history
 ├── utils/               # Utility functions
 │   └── apiUtils.js      # API utility functions
 ├── .env                 # Environment variables
