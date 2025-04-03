@@ -13,8 +13,12 @@ async function updateExchangeRate () {
         }
 
         const today = new Date();
-        const formateDate = today.toISOString().split('T')[0];
-
+        //yapanın ellerinden öptüğüm toISOString saolsun TR de zaman kayması oluyor
+        //ondan dolayı böyle düzgün çalışmıyor: const formateDate = today.toISOString().split('T')[0];
+        const year = today.getFullYear();
+        const month = String(today.getMonth() + 1).padStart(2, '0');
+        const day = String(today.getDate()).padStart(2, '0');
+        const formateDate = `${year}-${month}-${day}`;
 
         const rate = parseFloat(apiResponse.rates.TRY);
         const exchangeData = JSON.parse(fs.readFileSync(exchangeJsonPath, 'utf-8'));
@@ -39,4 +43,4 @@ async function updateExchangeRate () {
 
 cron.schedule('0 9 * * *', updateExchangeRate);
 
-console.log('Cron function started');
+console.log('Cron function started');""
