@@ -2,7 +2,7 @@ const cron = require('node-cron');
 const fs = require('fs');
 const path = require('path');
 const { getUsdTryRate } = require('../config/api');
-const exchangeJsonPath = path.join(__dirname, '../data/exchange.json');
+const exchangeJsonPath = path.join(__dirname, '../data/dailyExchanges.json');
 
 async function updateExchangeRate () {
     try {
@@ -43,4 +43,4 @@ async function updateExchangeRate () {
 
 cron.schedule('0 9 * * *', updateExchangeRate);
 
-console.log('Cron function started');""
+console.log('Cron function started');
