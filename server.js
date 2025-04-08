@@ -1,5 +1,6 @@
 const express = require('express');
 const currencyRoutes = require('./routes/currency');
+const nostalgiaRoutes = require('./routes/nostalgia');
 require('./utils/cron');
 
 const app = express();
@@ -10,6 +11,7 @@ app.get('/', (req, res) => {
 });
 
 app.use('/currency', currencyRoutes);
+app.use('/nostalgia', nostalgiaRoutes);
 
 const port = process.env.PORT || 3000;
 app.listen(port, () => {
