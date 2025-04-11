@@ -8,17 +8,19 @@ project-root/
 ├── views/                         # Frontend files (HTML, template engine files)
 │   └── layouts/
 ├── routes/                        # Route definitions
-│   └── currency.js                # Currency exchange routes
+│   ├── currency.js                
+│   └── nostalgia.js               
 ├── controllers/                   # Route handlers
-│   └── currencyController.js
+│   ├── currencyController.js      
+│   └── nostalgiaController.js     
 ├── config/                        # API configuration
 │   └── api.js
 ├── data/                          # Data Files
-│   ├── products.json              # Product price history
-│   ├── dailyExchange.json         # Dollar/TL daily exchange rate history
-│   └── historicalExchange.json    # Dollar/TL historical exchange rate history
+│   ├── products.json              
+│   ├── dailyExchange.json        
+│   └── historicalExchange.json    
 ├── utils/                         # Utility functions
-│   └── apiUtils.js                # API utility functions
+│   └── apiUtils.js                
 ├── .env                           # Environment variables
 ├── .gitignore                     # Files to be ignored by Git
 ├── package.json                   # Node.js project configuration
