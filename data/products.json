@@ -83,18 +83,18 @@
             {
                 "year": 2020,
                 "versions": [
-                    { "model": "iPhone SE 2020", "price": 5.299 },
-                    { "model": "iPhone 12 Mini", "price": 9.999 },
                     { "model": "iPhone 12", "price": 10.999 },
+                    { "model": "iPhone 12 Mini", "price": 9.999 },
                     { "model": "iPhone 12 Pro", "price": 14.999 },
-                    { "model": "iPhone 12 Pro Max", "price": 16.999 }
+                    { "model": "iPhone 12 Pro Max", "price": 16.999 },
+                    { "model": "iPhone SE 2020", "price": 5.299 }
                 ]
             },
             {
                 "year": 2021,
                 "versions": [
-                    { "model": "iPhone 13 Mini", "price": 10.999 },
                     { "model": "iPhone 13", "price": 11.999 },
+                    { "model": "iPhone 13 Mini", "price": 10.999 },
                     { "model": "iPhone 13 Pro", "price": 15.999 },
                     { "model": "iPhone 13 Pro Max", "price": 10.999 }
                 ]
@@ -102,8 +102,8 @@
             {
                 "year": 2022,
                 "versions": [
-                    { "model": "iPhone SE (3. Nesil)", "price": 16.999 },
                     { "model": "iPhone 14", "price": 32.999 },
+                    { "model": "iPhone SE (3. Nesil)", "price": 16.999 },
                     { "model": "iPhone 14 Plus", "price": 36.999 },
                     { "model": "iPhone 14 Pro", "price": 41.999 },
                     { "model": "iPhone 14 Pro Max", "price": 45.999 }
