@@ -9,6 +9,17 @@ Currency Nostalgia is a currency comparison API that allows users to compare his
 - Stores historical exchange rates and product data in local JSON files.
 - Schedules daily currency rate updates using `node-cron`.
 
+## 🔗 Live Demo (Hosted on Render)
+
+You can test the API live on Render:
+
+- **Get the latest exchange rates:**  
+  [`https://webappkindathingidk.onrender.com/currency/latest`](https://webappkindathingidk.onrender.com/currency/latest)
+
+- **Compare historical vs current product price:**  
+  [`https://webappkindathingidk.onrender.com/nostalgia/compare?year=2015&productId=1`](https://webappkindathingidk.onrender.com/nostalgia/compare?year=2015&productId=1)  
+  ↳ You can modify `year` and `productId` to test other combinations.
+
 ## 🛠️ Project Structure
 ````
 project-root/
