@@ -5,7 +5,7 @@ const saveExchangeRate = async (date, rate) => {
     const { data, error } = await supabase
         .from('daily_exchange_rates')
         .upsert(
-            { date, error },
+            { date, rate },
             { onConflict: 'date' }
         );
 
@@ -26,7 +26,7 @@ const getRecentExchangeRates = async (limit = 30) => {
 };
 
 // belirli gün kur verisi get
-const getExchangeRatesByDate = async (startDate, endDate) => {
+const getExchangeRatesByDateRange = async (startDate, endDate) => {
     const { data, error } = await supabase
         .from('daily_exchange_rates')
         .select('*')
@@ -41,5 +41,5 @@ const getExchangeRatesByDate = async (startDate, endDate) => {
 module.exports = {
     saveExchangeRate,
     getRecentExchangeRates,
-    getExchangeRatesByDate,
+    getExchangeRatesByDateRange,
 };
