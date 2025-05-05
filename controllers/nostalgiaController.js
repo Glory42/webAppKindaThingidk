@@ -1,6 +1,6 @@
 const fs = require('fs');
 const path = require('path');
-const { getExchangeRatesByDate } = require('../services/exchangeRateService');
+const { getExchangeRatesByDateRange } = require('../services/exchangeRateService');
 
 const productsPath = path.join(__dirname, '../data/products.json');
 const historicalPath = path.join(__dirname, '../data/historicalExchanges.json');
@@ -15,7 +15,7 @@ const compareHistoricalPrices = async (req, res) => {
         const historicalData = JSON.parse(fs.readFileSync(historicalPath, 'utf-8'));
         const productData = JSON.parse(fs.readFileSync(productsPath, 'utf-8'));
         
-        const recentRates = await getExchangeRatesByDate(1);
+        const recentRates = await getExchangeRatesByDateRange(1);
         const dailyRate = recentRates[0].rate;
         
         const historicalRate = historicalData.historical.find(item => item.year === parseInt(year));
