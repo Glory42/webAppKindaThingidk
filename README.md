@@ -13,11 +13,13 @@ project-root/
 ├── controllers/                   # Route handlers
 │   ├── currencyController.js      
 │   └── nostalgiaController.js     
-├── config/                        # API configuration
-│   └── api.js
+├── config/                        # API and DB configuration
+│   ├── api.js
+│   └── supabase.js
+├── services/
+│   └── exchangeRateSerices.js
 ├── data/                          # Data Files
 │   ├── products.json              
-│   ├── dailyExchange.json        
 │   └── historicalExchange.json    
 ├── utils/                         # Utility functions
 │   └── apiUtils.js                
