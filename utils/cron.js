@@ -1,8 +1,6 @@
 const cron = require('node-cron');
-const fs = require('fs');
-const path = require('path');
 const { getUsdTryRate } = require('../config/api');
-const exchangeJsonPath = path.join(__dirname, '../data/dailyExchanges.json');
+const { saveExchangeRate } = require('../services/exchangeRateService');
 
 async function updateExchangeRate () {
     try {
@@ -21,19 +19,8 @@ async function updateExchangeRate () {
         const formateDate = `${year}-${month}-${day}`;
 
         const rate = parseFloat(apiResponse.rates.TRY);
-        const exchangeData = JSON.parse(fs.readFileSync(exchangeJsonPath, 'utf-8'));
-        const dailyIndex = exchangeData.daily.findIndex(entry => entry.date === formateDate);
-
-        if (dailyIndex !== -1) {
-            exchangeData.daily[dailyIndex].rate = rate;
-        } else {
-            exchangeData.daily.push({
-                date: formateDate,
-                rate: rate
-            });
-        };
-
-        fs.writeFileSync(exchangeJsonPath, JSON.stringify(exchangeData, null, 2), 'utf-8');
+        
+        await saveExchangeRate(formateDate, rate);
 
         console.log(`Rate updated: ${formateDate}, rate: ${rate}`);
     } catch (error) {
@@ -41,6 +28,10 @@ async function updateExchangeRate () {
     }
 };
 
+// her gün sabah 9 da çalışıyor
 cron.schedule('0 9 * * *', updateExchangeRate);
+
+// uygulama başladığında bri kere çalışsın (kapatılabilir/opsiyonel)
+updateExchangeRate();
 
 console.log('Cron function started');
