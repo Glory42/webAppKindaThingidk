@@ -17,8 +17,8 @@ You can test the API live on Render:
   <a href="https://webappkindathingidk.onrender.com/currency/latest" target="_blank">https://webappkindathingidk.onrender.com/currency/latest</a>
 
 - **Compare historical vs current product price:**  
-  <a href="https://webappkindathingidk.onrender.com/nostalgia/compare?year=2015&productId=1" target="_blank">https://webappkindathingidk.onrender.com/nostalgia/compare?year=2015&productId=1</a>  
-  ↳ You can change `year` and `productId` to test different combinations.
+  [`https://webappkindathingidk.onrender.com/nostalgia/compare?year=2015&productId=1`](https://webappkindathingidk.onrender.com/nostalgia/compare?year=2015&productId=1)  
+  ↳ You can modify `year` and `productId` to test other combinations.
 
 ## 🛠️ Project Structure
 ````
