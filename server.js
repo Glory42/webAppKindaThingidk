@@ -1,9 +1,13 @@
 const express = require('express');
+const cors = require('cors');
 const currencyRoutes = require('./routes/currency');
 const nostalgiaRoutes = require('./routes/nostalgia');
 require('./utils/cron');
 
 const app = express();
+
+app.use(cors());
+app.use(express.json());
 
 app.get('/', (req, res) => {
     res.send('Hello backend of a doomed app');
